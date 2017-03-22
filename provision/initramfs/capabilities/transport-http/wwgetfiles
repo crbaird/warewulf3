@@ -29,7 +29,7 @@ else
     exit
 fi
 
-WWGETFILES_INTERVAL=${WWGETFILES_INTERVAL:-180}
+WWGETFILES_INTERVAL=${WWGETFILES_INTERVAL:-0}
 
 if [ -n "$WWGETFILES_INTERVAL" -a $WWGETFILES_INTERVAL -gt 0 ];then
     if [ -n "$RANDOM" -a ! -f "/init" ]; then
